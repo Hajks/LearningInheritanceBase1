@@ -16,5 +16,15 @@ namespace LearningInheritanceBase1
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MyBaseClass myBaseClass = new MyBaseClass("To ja jestem, potrzebny");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MySubClass mySubClass = new MySubClass("Tym razem, sprawdzam kto to mowi", 10); //We just include 2 new parametrs w/o copying previous one.
+        }
     }
 }
